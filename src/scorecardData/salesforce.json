@@ -1,0 +1,100 @@
+{
+    "title": "Salesforce",
+    "steps": [
+        {
+            "title": "one",
+            "questions" : [
+                {
+                    "question": "Why would you be doing this?",
+                    "answers": [
+                        {
+                            "title": "To make money",
+                            "value": 12
+                        },
+                        {
+                            "title": "To make friends",
+                            "value": 2
+                        },
+                        {
+                            "title": "To ensure human survival",
+                            "value": 200
+                        },
+                    ]
+                },
+                {
+                    "question": "Who will benifit?",
+                    "answers": [
+                        {
+                            "title": "Me",
+                            "value": 12
+                        },
+                        {
+                            "title": "My friends",
+                            "value": 2
+                        },
+                        {
+                            "title": "The Antient One",
+                            "value": 200
+                        },
+                    ]
+                },
+            ]
+        },
+        {
+            "title": "Step Two Electric Boogaloo",
+            "questions" : [
+                {
+                    "question": "Why would you not be doing this? (step two)",
+                    "answers": [
+                        {
+                            "title": "To make money",
+                            "value": 12
+                        },
+                        {
+                            "title": "To make friends",
+                            "value": 2
+                        },
+                        {
+                            "title": "To ensure human survival",
+                            "value": 200
+                        },
+                    ]
+                },
+                {
+                    "question": "Who will not benifit? (step two)",
+                    "answers": [
+                        {
+                            "title": "Me",
+                            "value": 12
+                        },
+                        {
+                            "title": "My friends",
+                            "value": 2
+                        },
+                        {
+                            "title": "The Antient One",
+                            "value": 200
+                        },
+                    ]
+                }
+            ]
+        }
+    ],
+    "outcomes" : [
+        {
+            "minPointValue": 0,
+            "maxPointValue": 20,
+            "message": "Those are rookie numbers"
+        },
+        {
+            "minPointValue": 21,
+            "maxPointValue": 200,
+            "message": "You're all right LaRusso"
+        },
+        {
+            "minPointValue": 201,
+            "maxPointValue": 20000,
+            "message": "Oh You fancy huh?"
+        }
+    ]
+}
