@@ -4,14 +4,16 @@ import './App.css';
 class ProgressBar extends Component {
 
   getSteps() {
-		//TODO return steps markup from props
-		//As Li's
+    const { steps } = this.props;
+    return steps.map(step => {
+      return <li key={step.id}>{step.title}</li>;
+    });
   }
 
   render() {
     return (
       <ul className="progressBar">
-				this.getSteps();
+				{this.getSteps()}
       </ul>
     );
   }

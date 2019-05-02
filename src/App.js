@@ -1,22 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ProgressBar from './ProgressBar.js';
+import Step from './Step.js';
 
 class App extends Component {
 
-	this.state = {
-		curentStep = 0
+	state = {
+		curentStep:0,
+		steps:[],
+		outcomes:[]
 	}
 
   loadScorecard(cardId) {
-    fetch('salesforce.json').
-			then(function() {
-				//TODO handle breaking up data
-			});
+		let data = require('./scorecardData/salesforce.json');
+		this.setState({steps: data.steps});
+		this.setState({outcome: data.outcomes});
   }
 
   componentDidMount() {
-		//TODO determine which json file to load (presumably based on url)
     this.loadScorecard('salesforce');
   }
 
@@ -25,11 +26,11 @@ class App extends Component {
 	}
 
   render() {
+		const { curentStep, steps, outcomes } = this.state;
     return (
       <div className="App">
-				//TODO render progress bar
-				//TODO render step wrapper
-				//TODO render steps Nav
+				<ProgressBar steps={steps} curentStep={curentStep} />
+				<Step steps={steps} curentStep={curentStep} outcomes={outcomes} />
       </div>
     );
   }

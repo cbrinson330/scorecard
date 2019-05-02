@@ -3,6 +3,7 @@
     "steps": [
         {
             "title": "one",
+            "id": 0,
             "questions" : [
                 {
                     "question": "Why would you be doing this?",
@@ -18,7 +19,7 @@
                         {
                             "title": "To ensure human survival",
                             "value": 200
-                        },
+                        }
                     ]
                 },
                 {
@@ -35,13 +36,14 @@
                         {
                             "title": "The Antient One",
                             "value": 200
-                        },
+                        }
                     ]
-                },
+                }
             ]
         },
         {
             "title": "Step Two Electric Boogaloo",
+            "id": 1,
             "questions" : [
                 {
                     "question": "Why would you not be doing this? (step two)",
@@ -57,7 +59,7 @@
                         {
                             "title": "To ensure human survival",
                             "value": 200
-                        },
+                        }
                     ]
                 },
                 {
@@ -74,7 +76,7 @@
                         {
                             "title": "The Antient One",
                             "value": 200
-                        },
+                        }
                     ]
                 }
             ]
