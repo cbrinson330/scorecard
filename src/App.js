@@ -8,22 +8,26 @@ class App extends Component {
 	state = {
 		curentStep:0,
 		steps:[],
-		outcomes:[]
+		outcomes:[],
+		questions: [],
 	}
 
   loadScorecard(cardId) {
-		let data = require('./scorecardData/salesforce.json');
+		let data = require(`./scorecardData/${cardId}.json`);
+
+		const allQuestions = [];
+		data.steps.forEach(function(step) {
+			allQuestions.push(step.questions);
+		});
+
 		this.setState({steps: data.steps});
 		this.setState({outcome: data.outcomes});
+		this.setState({questions: allQuestions});
   }
 
   componentDidMount() {
     this.loadScorecard('salesforce');
   }
-
-	renderStep() {
-		//TODO figure out 
-	}
 
   render() {
 		const { curentStep, steps, outcomes } = this.state;

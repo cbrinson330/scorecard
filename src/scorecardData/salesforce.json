@@ -6,7 +6,9 @@
             "id": 0,
             "questions" : [
                 {
+                    "id": 100,
                     "question": "Why would you be doing this?",
+                    "isRequired": true,
                     "answers": [
                         {
                             "title": "To make money",
@@ -23,7 +25,9 @@
                     ]
                 },
                 {
+                    "id": 101,
                     "question": "Who will benifit?",
+                    "isRequired": true,
                     "answers": [
                         {
                             "title": "Me",
@@ -46,7 +50,9 @@
             "id": 1,
             "questions" : [
                 {
+                    "id": 102,
                     "question": "Why would you not be doing this? (step two)",
+                    "isRequired": true,
                     "answers": [
                         {
                             "title": "To make money",
@@ -63,7 +69,9 @@
                     ]
                 },
                 {
+                    "id": 103,
                     "question": "Who will not benifit? (step two)",
+                    "isRequired": true,
                     "answers": [
                         {
                             "title": "Me",

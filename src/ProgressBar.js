@@ -6,7 +6,7 @@ class ProgressBar extends Component {
   getSteps() {
     const { steps } = this.props;
     return steps.map(step => {
-      return <li key={step.id}>{step.title}</li>;
+      return <li key={step.id}><a href={step.id}>{step.title}</a></li>;
     });
   }
 
